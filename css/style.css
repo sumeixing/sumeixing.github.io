@@ -718,15 +718,15 @@ body .theme-button-one:hover {background: #fff;}
 .blog-image-cover-post .single-blog-post .overlay .theme-button-one:hover {color: #fff;}
 /*------------------------- Theme Sidebar -----------------------*/
 .theme-main-sidebar .sidebar-box {padding: 30px 40px 40px 40px;margin-bottom: 40px;}
-.theme-main-sidebar .sidebar-title {
+.sidebar-title {
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.8px;
   padding-left: 20px;
   margin-bottom: 30px;
 }
-.theme-main-sidebar .sidebar-title:first-letter {font-size: 16px;}
-.theme-main-sidebar .sidebar-title:before {
+.sidebar-title:first-letter {font-size: 16px;}
+.sidebar-title:before {
   content: '';
   width: 6px;
   height: 6px;
@@ -1167,7 +1167,7 @@ body .theme-button-one:hover {background: #fff;}
 .contact-us .contact-form p {
   text-align: center;
   text-transform: uppercase;
-  padding: 10px 0 50px 0;
+  padding: 5px 0 0px 0;
   font-weight: 600;
   font-size: 13px;
 }
