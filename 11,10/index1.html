@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			[v-cloak]{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" v-cloak="">
+			<a href="../index.html">回去</a>
+			<button @dblclick="btn">点击</button>
+			<div id="">
+				{{a}}
+			</div>
+			<div id="">
+				<input type="text" name="" id="" value="" @keyup.enter="btn"/>
+			</div>
+			<div style="width: 100px;height: 100px;background: red;" @click="no1">
+				<div style="height: 50px;width: 50px;background: blue;" @click.stop="no2">
+					
+				</div>
+			</div>
+			<div style="width: 200px;height: 200px;background: yellow;" @click="no3(1,$event)">
+				
+			</div>
+		</div>
+	</body>
+	<script src="vue.js"></script>
+	<script>
+		new Vue({
+			el:"#box",
+			data:{
+				a:12
+			},
+			methods:{
+				btn(){
+					this.a++
+				},
+				no1(){
+					alert('我是父级')
+				},
+				no2(){
+					alert('我是子级')
+				},
+				no3(a,ev){
+					console.log(ev)
+				}
+			}
+		})
+
+	</script>
+</html>

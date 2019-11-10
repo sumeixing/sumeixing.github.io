@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			[v-cloak]{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" v-cloak="">
+			<input type="text" v-model.number="n1"/>
+			<div>
+				{{n1+10}}
+			</div>
+			<input type="radio" name="a" value="男" v-model="n2">男
+			<input type="radio" name="a" value="女" v-model="n2">女
+			<div>
+				{{2}}
+			</div>
+			<input type="checkbox" value="苹果" v-model="n3"/>苹果
+			<input type="checkbox" value="香蕉" v-model="n3"/>香蕉
+			<input type="checkbox" value="榴莲" v-model="n3"/>榴莲
+			<input type="checkbox" value="车厘子" v-model="n3"/>车厘子
+			<div>
+				{{n3}}
+			</div>
+			<select v-model="n4">
+				<option value="0">百度</option>
+				<option value="1">谷歌</option>
+			</select>
+			<div>
+				{{4}}
+			</div>
+		</div>
+		<script src="vue.js"></script>
+		<script>
+			new Vue({
+				el:'#box',
+				data:{
+					n1:'',
+					n2:'女',
+					n3:['香蕉','车厘子'],
+					n4:'1'
+				}
+			})
+		</script>
+	</body>
+</html>

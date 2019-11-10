@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<button @click="type!type">切换</button>
+			<div style="width:100px;height:100px;background:red;" v-if="type">
+				
+			</div>
+			<div v-if="a==1">
+				
+			</div>
+			<div v-if="a==2">
+				
+			</div>
+			<div v-if="a==3">
+				
+			</div>
+			<div v-else="">
+				
+			</div>
+			
+		</div>
+		<script src="vue.js"></script>
+		<script>
+			new Vue({
+				el:'#box',
+				data:{
+					type:true
+				}
+			})
+		</script>
+	</body>
+</html>

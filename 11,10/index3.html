@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			[v-cloak]{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" v-cloak="">
+			<div v-for="(i,$index) in 5">
+				{{i}}==>{{$index}}
+			</div>
+			<div v-for="(i,$index) in str">
+				{{i}}==>{{$index}}
+			</div>
+			<div v-for="(i, $index) in arr">
+				{{i}}==>{{$index}}
+			</div>
+			<div v-for="(i,$key,$index) in json">
+				{{i}}==>{{$key}}-->{{$index}}
+			</div>
+		</div>
+		<script src="vue.js"></script>
+		<script>
+			new Vue({
+				el:'#box',
+				data:{
+					str:"he",
+					arr:[1,2,3,4],
+					json:{
+						a:12,
+						b:23,
+						c:33
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
