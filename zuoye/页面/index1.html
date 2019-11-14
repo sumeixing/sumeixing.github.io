@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			#box {
+				padding: 0 10%;
+				background: #0c1248;
+				/*background:red;*/
+			}
+			
+			.head {
+				width:80%;
+				min-height:80px;
+				/*background: #0c1248;*/
+				/*background:red;*/
+				opacity:1;
+				position: fixed;
+				
+			}
+			
+			.head img {
+				width: 187px;
+				height: 83px;
+			}
+			
+			.head .daohang {
+				float: right;
+			}
+			
+			.head ul {
+				font-size: 20px;
+				line-height: 86px;
+			}
+			
+			.head ul li {
+				color: #FFFFFF;
+				float: left;
+				margin-left: 20px;
+			}
+			.head ul li a{
+				color: #FFFFFF;
+			}
+			.head ul li:hover {
+				color: #1c8dff;
+				border-bottom: solid 2px #1c8dff;
+			}
+			
+			.g-one {
+				height:1000px;
+				background: #0c1248;
+				
+			}
+			
+			.g-one .one-left {
+				width: 500px;
+				height: 500px;
+				position: relative;
+    			top: 197px;
+				
+				/*background:red;*/
+			}
+			
+			.one-left .s {
+				width: 340px;
+				font-size: 50px;
+				line-height: 70px;
+			}
+			
+			.one-left .s .jian {
+				color: #FFFFFF;
+			}
+			
+			.one-left .s .mei {
+				color: #1c8dff;
+			}
+			
+			.one-left .p {
+				margin-top: 30px;
+				width: 500px;
+				font-size: 18px;
+				color: #FFFFFF;
+				line-height: 40px;
+			}
+			
+			.g-one .one-right {
+				width: 710px;
+				height: 596px;
+				/*background:gray;*/
+				float: right;
+				margin-right: 20px;
+				margin-top: -510px;
+				
+				
+			}
+			.one-right img{
+				width:700px;
+				height:600px;
+				position: relative;
+				top:200px;	
+			}
+			
+			.two {
+				height:700px;
+				background: #0c1248;
+				/*padding: 0 10%;*/
+			}
+			
+			.two h1 {
+				color: #FFFFFF;
+			}
+			
+			.two .content {
+				margin-left:25%;
+				width: 800px;
+				color: #FFFFFF;
+				font-size: 20px;
+				margin-top:30px;
+				margin-bottom:30px;
+				
+			}
+			.two .tu{
+				 width: 479px;
+				 height:353px;
+				 background:#102a63;
+				 float: left;
+				 margin:20px;
+				 border-radius:5%;
+				 background-image: linear-gradient(#102a63 80%, #1b579a);
+			}
+			.tu img{
+				width:89px;
+				height:79px;
+				margin:80px auto;
+			}
+			.tu p{
+				font-size:28px;
+				color:#FFFFFF;
+				
+			}
+			.huobi{
+				min-height:800px;
+				background: #0c1248;
+
+			}
+			.huobi .left{
+				width:50%;
+				/*height:300px;*/
+				background:#102a63;
+				float: left;
+				padding:2%
+				
+				
+			}
+			.left h1{
+				text-align: center;
+				color:#FFFFFF;
+				
+			}
+			.left .gou{
+				text-align: center;
+				min-height:30px;
+				font-size:20px;
+				color:#11316c;
+				margin-top:10px;
+			}
+			.left .tiao{
+				margin-top:10px;
+				margin-left:350px;
+				width:100px;
+				border-bottom:5px solid #FFFFFF;
+				
+			}
+			.left p{
+				margin-top:30px;
+				color:#FFFFFF;
+				text-align: center;
+				font-size:30px;
+			}
+			.left .jin{
+				width:500px;
+				min-height:30px;
+				background:#FFFFFF;
+				
+				margin:0 auto;
+				border-radius:25px;
+				padding:2px;
+				margin-top:50px;
+				
+			}
+			.left .jin .min-box{
+				width: 410px;
+				min-height:30px;
+				background:#2870ec;
+				border-radius:25px;
+				color:#FFFFFF;
+				text-align: center;
+				
+			}
+			.left a{
+				width:150px;
+				height:50px;
+				display: block;
+				background:#2870ec;
+				color:#FFFFFF;
+				
+				border-radius: 20px;
+				text-align: center;
+				line-height: 50px;
+				margin:auto;
+				margin-top:50px;
+				
+			}
+			.huobi .right{
+				width:40%;
+				/*height:300px;*/
+				/*background:red;*/
+				float: left;
+				margin-left:20px;
+				margin-top:50px;
+			}
+			.right h1{
+				color:#FFFFFF;
+				
+			}
+			.right .yi{
+				color:#FFFFFF;
+				font-size:18px;
+				margin-top:20px;
+				margin-bottom:20px;
+				
+			}
+			.right .xiang{
+				font-size:22px;
+				color:#ffff;
+				margin-top:10px;
+
+			}
+			.xiang i{
+				color:#0a5ed4;
+				margin-right:20px;
+				
+			}
+			.quan{
+				background: #0c1248;
+				min-height:1000px;
+			}
+			.quan h1 {
+				color: #FFFFFF;
+			}
+			
+			.quan .content {
+				margin-left:25%;
+				width: 800px;
+				color: #FFFFFF;
+				font-size: 20px;
+				margin-top:30px;
+				margin-bottom:30px;
+				
+			}
+			.guan{
+				min-height:800px;;
+				background: #0c1248;
+				
+			}
+			.guan h1 {
+				color: #FFFFFF;
+			}
+			
+			.guan .content {
+				margin-left:25%;
+				width: 800px;
+				color: #FFFFFF;
+				font-size: 20px;
+				margin-top:30px;
+				margin-bottom:30px;
+				
+			}
+			.guan .foot{
+				width:682px;
+				height:558px;
+				background:#102a63;
+				float: left;
+				margin:40px;
+				border-radius:5%;
+				background-image: linear-gradient(#102a63 10%, #1b579a);
+				position: relative;
+				
+			}
+			.foot .img{
+				width:102px;
+				height:132px;
+				position: absolute;
+				/*margin:10px 20px;*/
+				left:35px;
+				top:50px;
+			}
+			.foot h2{
+				color:#FFFFFF;
+				position: absolute;
+				left:35px;
+				top:200px;
+				
+			}
+			.foot ul{
+				/*width:200px;*/
+				/*height:30px;*/
+				/*background:red;*/
+				position: absolute;
+				left:35px;
+				top:245px;
+				
+			}
+			.foot ul li{
+				min-width:400px;
+				/*height:30px;*/
+				/*background:pink;*/
+				margin-top:20px;
+				float: left;
+			}
+			ul li p{
+				font-size:16px;
+			   	color:#bcd8fd;
+			   	margin-left:-209px;
+			   	line-height:33px;
+			   	
+			}
+			.foot ul li img{
+				float:left
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<no1></no1>
+			<div class="head">
+				<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82YzAxZmI3NWMyY2UyNmVkZThiYTA1Y2U3MGEzMDU3Zi5wbmc_p_p100_p_3D.png">
+				<div class="daohang">
+					<ul>
+						<!--<li v-for="i in arr">{{i}}</li>-->
+						<li><a href="#one">首页</a></li>
+						<li><a href="#two">使用流程</a></li>
+						<li><a href="#three">全球服务</a></li>
+						<li><a href="#four">关于我们</a></li>
+						<li><a>专家团队</a></li>
+						<li><a href="#five">联系我们</a></li>
+						<li><a>合作伙伴</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="g-one" id="one">
+				<div class="one-left">
+					<div class="s">
+						<span class="jian">践行惠普金融助力</span>
+						<span class="mei">美好生活</span>
+					</div>
+					<p class="p">我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</p>
+
+					<a style="width:150px;height:45px;display:block;color:#FFFFFF;background:#0a6ef2;text-align: center;line-height: 45px;border-radius:20px;border:1px solid #10377f;margin-top:30px;">联系我们——</a>
+					<a style="width:150px;height:45px;display:block;color:#FFFFFF;text-align: center;line-height: 45px;border-radius:20px;border:1px solid #10377f;float:right;margin-top:-50px;">点我咨询——</a>
+
+				</div>
+				<div class="one-right">
+					<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zZDUyMmVkNmVhNmIzYjZhYTBiZWM0YzdhMGQyNzE3Mi5wbmc_p_p100_p_3D.png">
+				</div>
+			</div>
+			<div class="two" id="two">
+				<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站." x_title="使用流程">
+					<div class="tu">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy85Y2VmNzcxOGEzZTNiNTBlYzA2YWUzNjYxMzZjMjYxNi5wbmc_p_p100_p_3D.png">
+						<p>创建账户</p>
+					</div>
+					<div class="tu">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yNGQ5ZmE0MzI4ZGI1NjEwZTQwODkyZmJhZjQxYTNlNS5wbmc_p_p100_p_3D.png">
+						<p>安全保障</p>
+					</div>
+					<div class="tu">
+						<img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy80ODVmOTZhYTgyYWEzN2E4ODNhYzcxZWMwODEwMDlhZC5wbmc_p_p100_p_3D.png">
+						<p>绑定付款</p>
+					</div>
+			</div>
+			
+			<div class="huobi">
+				<div class="left">
+					<h1>近期货币</h1>
+					<div class="gou">购买进度</div>
+					<div class="tiao"></div>
+					<p>00 天 23 时 07 分钟 27 秒</p>
+					<div class="jin">
+						<div class="min-box">购买进度  80%</div>
+					</div>
+					<a>联系我们</a>
+				</div>
+				<div class="right">
+					<h1>最值得信赖的平台</h1>
+					<p class="yi">移动互联网的稳定快速发展带动了货币行业的迅速崛起，在如此庞大的货币海洋中，哪些是您所需要的货币呢？</p>
+					<p class="xiang"><i>√</i>享受专属优惠券</p>
+					<p class="xiang"><i>√</i>用于商城消费 先用后付</p>
+					<p class="xiang"><i>√</i>随心付，3/6/9/12期随心付</p>
+				</div>
+			</div>
+			<div class="quan" id="three">
+				<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="全球服务" >
+				<div>
+					<img style="width:90%" src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8yMTg3ZWYyNmI2MDdiZmZlMDQ1MzgyMTNiNDYxMmRiYy5qcGc_p_p100_p_3D.jpg" />
+				</div>
+			</div>
+			<div class="guan" id="four">
+				<no1 x_content="我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站。" x_title="关于我们" >
+				<div class="foot">
+					<img class="img" src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy82MmMzM2FhNTI3Y2MxMjIxMWQ2YzRmMjdlYThhOTJkNC1lMTU2Mzk1MDAxNzQzOC5wbmc_p_p100_p_3D.png">
+					<h2>税收居民身份须知！</h2>
+					<ul>
+						<li><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png">
+							<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</p>
+						</li>
+						<li><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png">
+							<p>和可视化图文内容编辑模式让网站制 作和编辑模式</p>
+						</li>
+						<li><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png">
+							<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</p>
+						</li>
+					</ul>
+				</div>
+				<div class="foot">
+					<img class="img" src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy9kOGFjODRhYTVlMzZjZGMyYWRiN2YyY2I1ZjVjMjdlYS5wbmc_p_p100_p_3D.png">	
+					<h2>移动支付安全小知识！</h2>
+					<ul>
+						<li><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png">
+							<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制 作和维护成为一件轻松惬意的事</p>
+						</li>
+						<li><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png">
+							<p>和可视化图文内容编辑模式让网站制 作和编辑模式</p>
+						</li>
+						<li><img src="https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy8zODRiMjUzMTA5NGNjMzBmZWQ0NGRjMjU1YzcwM2JkMS5wbmc_p_p100_p_3D.png">
+							<p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<template id="no1">
+			<div>
+				<div style="text-align: center;">
+					<h1>{{title}}</h1>
+					<div class="content">
+						{{content}}
+					</div>
+					<div>
+						<slot></slot>
+					</div>
+				</div>
+			</div>
+		</template>
+		<script src="vue.js"></script>
+		<script>
+			Vue.component('no1', {
+				template: '#no1',
+				props: ['x_content', 'x_title',],
+				data() {
+					return {
+						content: this.x_content,
+						title: this.x_title,
+						/*imgarr: [{
+								imgurl: 'https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy85Y2VmNzcxOGEzZTNiNTBlYzA2YWUzNjYxMzZjMjYxNi5wbmc_p_p100_p_3D.png'
+							}, {
+								imgurl: 'https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy85Y2VmNzcxOGEzZTNiNTBlYzA2YWUzNjYxMzZjMjYxNi5wbmc_p_p100_p_3D.png'
+							} ,{
+								imgurl: 'https://ccdn.goodq.top/caches/76b523e47b518e3280b3a453638be094/aHR0cDovLzVkMzk2OWU0NTQxMGMudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxOS8wNy85Y2VmNzcxOGEzZTNiNTBlYzA2YWUzNjYxMzZjMjYxNi5wbmc_p_p100_p_3D.png'
+							}
+
+						],*/
+					arr: ['首页', '使用流程', '全球服务']
+						
+					}
+				}
+			})
+			new Vue({
+				el: "#box",
+				data: {
+					arr: ['首页', '使用流程', '全球服务', '关于我们', '专家团队', '联系我们', '合作伙伴']
+				}
+			})
+		</script>
+	</body>
+
+</html>
